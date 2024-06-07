@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hope</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+<body>
+
+    <img src="images/site loader.gif" class="loader" alt="">
+
+
+    <!-- header section starts here  -->
+    <header class="header-container">
+
+        
+        <!-- <div class="header1">
+            <a href="#" class="logo"><img src="../images/zcoms logo 1.png" alt=""></a>
+
+            <div class="search-bar-container">
+                <input type="search" placeholder="search here..." id="search-box" class="overall-search-input">
+                <label for="search-box"><button class="overall-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button></label>
+            </div>
+
+            <div class="header1-icons">
+                <div class="search-icon" id="search-icon"><a><i class="fa-solid fa-magnifying-glass"></i></a></div>
+
+                <div class="user-icon-container">
+                    <i class="fa-solid fa-user user-icon"></i>
+                    <div class="user-popup-box">
+                        <p class="user-name">login to your account</p>
+                        <a class="user-state">login</a>
+                    </div>
+                </div>
+
+                <a class="cart-icon" onclick="location.href='/cart'"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count-num">00</span></a>
+                <a class="nav-links-explorer" onclick="link_explorer()"><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div class="header2" id="header2">
+            <nav class="navbar">
+                <a href="" class="nav-links-cancel-btn"><i class="fa-solid fa-xmark"></i></a>
+                <a href="/">Home</a>
+                <a href="category.html">Product</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+                <a href="seller.html">become a seller</a>
+
+            </nav>
+        </div> -->
+        
+    </header>
+    <!-- header section Ends here  -->
+
+
+
+    <!-- slider section starts here  -->
+    <div class="overall-slider">
+        <section class="slider">
+            <div class="slides">
+
+                <input type="radio" name="radios" id="radio-1">
+                <input type="radio" name="radios" id="radio-2">
+                <input type="radio" name="radios" id="radio-3">
+                <input type="radio" name="radios" id="radio-4">
+                <input type="radio" name="radios" id="radio-5">
+    
+                <div class="A-slide first-slide-img">
+                    <img src="images/main slider images/slider img 4.jpg" alt="sorry">
+                </div>
+                <div class="A-slide">
+                    <img src="images/main slider images/slider img 5.jpg" alt="sorry">
+                </div>
+                <div class="A-slide">
+                    <img src="images/main slider images/slider img 1.jpg" alt="sorry">
+                </div>
+                <div class="A-slide">
+                    <img src="images/main slider images/slider img 6.jpg" alt="sorry">
+                </div>
+                <div class="A-slide">
+                    <img src="images/main slider images/slider img 2.jpg" alt="sorry">
+                </div>
+            </div>
+    
+            <div class="manual-slider-labels">
+                <label for="radio-1" class="manual-label"></label>
+                <label for="radio-2" class="manual-label"></label>
+                <label for="radio-3" class="manual-label"></label>
+                <label for="radio-4" class="manual-label"></label>
+                <label for="radio-5" class="manual-label"></label>
+            </div>
+        </section>
+    </div>
+    <!-- slider section ends here  -->
+
+
+
+    <!-- category section starts here  -->
+    <section class="category-container">
+
+        <div class="category-boxes">
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/mens clothes.jpg" alt="">
+                <p class="category-name">mens clothes</p>
+            </div></a>
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/girls clothes.jpg" alt="">
+                <p class="category-name" style="background-color:rgb(254, 220, 237)">girls clothes</p>
+            </div></a>
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/kids.jpg" alt="">
+                <p class="category-name" style="background-color:rgb(255, 255, 183)">kids clothes</p>
+            </div></a>
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/phone-1.jpg" alt="">
+                <p class="category-name" style="background-color:rgb(255, 202, 255)">mobiles</p>
+            </div></a>
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/beauty things.jpg" alt="">
+                <p class="category-name" style="background-color:antiquewhite">beauty</p>
+            </div></a>
+
+            <a href=""><div class="A-category-box">
+                <img src="images/product category imgs/shoes.jpg" alt="">
+                <p class="category-name" style="background-color:rgb(184, 249, 184)">shoes</p>
+            </div></a>
+
+        </div>
+        <button class="explore-category-btn">explore category</button>
+    </section>
+    <!-- category section ends here  -->
+
+
+
+
+    <!-- product slider starts here  -->
+    <section class="product-container">
+        <h2 class="section-heading">our best sellings</h2>
+
+        <button class="pre-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="product-slider-container">
+            <div class="product-cards">
+
+                <div class="A-card" data-id="101">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card1.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">womens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+    
+                <div class="A-card" data-id="102">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card2.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens sports</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+    
+                <div class="A-card" data-id="103">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card3.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+    
+                <div class="A-card" data-id="104">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card4.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">womens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>
+                    </div>
+                </div>
+    
+                <div class="A-card" data-id="105">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card5.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+    
+                <div class="A-card" data-id="106">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card6.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+
+                <div class="A-card" data-id="107">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card7.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+
+                <div class="A-card" data-id="108">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card8.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">mens casuals</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+
+                <div class="A-card" data-id="109">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card9.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">sporsts shoes</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+
+                <div class="A-card" data-id="110">
+                    <div class="product-image">
+                        <span class="offer-tag">50% off</span>
+                        <button class="cart-btn">Add to Cart</button>
+                        <img src="images/product slider images/card10.png" alt="sorry" class="product-thumb">
+                    </div>
+                    <div class="product-info">
+                        <h2 class="product-category">sports shoes</h2>
+                        <span class="price">$25</span> <span class="actual-price">$45</span>
+                        <button class="wishlist-btn"><span class="heart-icon"><i class="fa-regular fa-heart"></i></span></button>                    </div>
+                </div>
+    
+    
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- product slider ends here  -->
+
+
+
+
+    <!-- apparels section starts here  -->
+    <section class="apparel-section">
+
+        <div class="apparel"><a href=""><img src="images/apprarel images/apparel-1.jpg" alt="sorry"></a>
+            <h2 class="apparel-headings">womens apparels</h2>
+        </div>
+        <div class="apparel"><a href=""><img src="images/apprarel images/apparel-7.jpg" alt="sorry"></a>
+            <h2 class="apparel-headings">mens apparels</h2>
+        </div>
+        <div class="apparel"><a href=""><img src="images/apprarel images/apparel-5.jpg" alt="sorry" class="image-3"></a>
+            <h2 class="apparel-headings">woodies</h2>
+        </div>
+
+        <div class="apparel"><a href=""><img src="images/apprarel images/apparel-9.jpg" alt="sorry" class="image-4"></a>
+            <h2 class="apparel-headings">womens apparels</h2>
+        </div>
+        <!-- <div class="apparel"><a href=""><img src="images/apprarel images/apparel-8.jpg" alt="sorry"></a></div> -->
+        <!-- <div class="apparel"><a href=""><img src="images/apprarel images/apparel-3.jpg" alt="sorry"></a></div> -->
+
+    </section>
+    <!-- apparels section ends here  -->
+
+
+
+    <!-- newsletter section starts here  -->
+    <section class="newsletter-container">
+        <h2 class="newsletter-heading">newsletter</h2>
+        <div class="newsletter-box">
+            <div class="newsletter-email-input">
+                <input type="email" placeholder="get in touch" id="id-for-newsletter-input">
+                <label for="id-for-newsletter-input">subscribe</label>
+            </div>
+            <div class="newsletter-infos">
+                <h3 class="phone-details"><i class="fa-solid fa-phone"></i>(91)-1122334455</h3>
+                <h3 class="email-details"><i class="fa-solid fa-envelope"></i>mail: zcoms@gmail.com</h3>
+                <h3 class="location-details"><i class="fa-solid fa-location-dot"></i>VIT, vellore-district, 632503</h3>
+                
+                <h2>follow us on:</h2>
+                <div class="socialmedia-container">
+                    <div class="socialmedia-icon"><i class="fa-brands fa-instagram sm-instagram"></i></div>
+                    <div class="socialmedia-icon"><i class="fa-brands fa-facebook sm-facebook"></i></div>
+                    <div class="socialmedia-icon"><i class="fa-brands fa-youtube sm-youtube"></i></div>
+                    <div class="socialmedia-icon"><i class="fa-brands fa-linkedin sm-linkedin"></i></div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- newsletter section ends here  -->
+
+
+
+
+    <!-- footer section starts here  -->
+    <footer class="footer-container">
+
+        <div class="footer">
+
+            <div class="footer-logo"><img src="images/foooter logo ugv.png" alt="zcoms">
+            
+                <div class="short-description">
+                    <p><span>zcoms</span>intent is to serve things in an affordable price to the people.</p>
+                </div>
+            </div>
+    
+            <div class="footer-links">
+                <div class="product-category">
+                    <h3>product category</h3>
+                    <a href="">men's apparels</a>
+                    <a href="">women's apparels</a>
+                    <a href="">gadgets</a>
+                    <a href="">cosmetics</a>
+                    <a href="">toys</a>
+                    <a href="">sports</a>
+                    <a href="">wearables</a>
+                    <a href="">stationaries</a>
+                </div>
+            </div>
+
+            <div class="footer-links-2">
+                <div class="information-list">
+                    <h3>informations</h3>
+                    <a href="">privacy policy</a>
+                    <a href="">refund policy</a>
+                    <a href="">shipping policy</a>
+                    <a href="">terms & conditions</a>
+                    <a href="">blog</a>
+                </div>
+            </div>
+
+            <div class="footer-links-3">
+                <h3>quick links</h3>
+                <a href="">search</a>
+                <a href="">about us</a>
+                <a href="">FAQ</a>
+                <a href="">contact</a>
+                <a href=""><i class="fa-brands fa-instagram"></i>instagram</a>
+                <a href=""><i class="fa-brands fa-facebook"></i>facebook</a>
+                <a href=""><i class="fa-brands fa-youtube"></i>youtube</a>
+            </div>
+    
+        </div>
+
+        <h2><a href="./sharmi_files/scrap.html" class="scrap" style="color: white; z-index: 10;"></a></h2>
+
+        <div class="footer-2">
+            <p><span>&copy;</span>copyrights by zcomz team.</p>
+        </div>
+
+    </footer>
+    <!-- footer section ends here  -->
+
+    
+    <!-- script tag  -->
+    <!-- <script src="js/home.js"></script> -->
+    <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/header.js"></script>
+
+    
+</body>
+</html>

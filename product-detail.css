@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.single-product-container{
+    /* border:1px solid red; */
+    padding:5vh 10vw;
+}
+
+.product-box{
+    /* border:1px solid black; */
+    display:flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.product-box .image-side{
+    position:relative;
+    width:40%;
+    height:600px;
+}
+
+.image-side .big-image{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    cursor:pointer;
+}
+
+.image-side .small-images{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:0px 3px;
+    width:90%;
+    position:absolute;
+    left:50%;
+    bottom:10px;
+    transform: translate(-50%);
+    background-color: white;
+    display:none;
+}
+
+.small-images .small-img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+    margin:7px 4px;
+    cursor:pointer;
+}
+
+
+
+.product-box .details-side{
+    padding-top:40px;
+    border:0px solid blue;
+    width:60%;
+}
+
+.details-side .product-name{
+    text-transform: capitalize;
+    color:black;
+    font-weight: bold;
+    font-size: 40px;
+    margin:10px 0px;
+    letter-spacing: 1px;
+
+}
+
+.details-side .star-rating-container{
+    display:flex;
+    gap:5px;
+    color:gold;
+    margin:10px 0px;
+}
+
+.details-side .short-des {
+    color:grey;
+    font-size: 20px;
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+.details-side select{
+    margin:10px 0px;
+    padding:10px;
+    outline:none;
+    border:1px solid #ccc;
+    text-transform: capitalize;
+    font-family: roboto;
+    font-size: 16px;
+    color:grey;
+    font-weight: bold;
+    border-radius:5px;
+    display: none;
+}
+.details-side select:focus{
+    border:1px solid #383838;
+}
+.details-side .price-details{
+    margin:10px 0px;
+    display:flex;
+    align-items: center;
+}
+.details-side .price-details .product-price{
+    font-size:40px;
+    color:#383838;
+    margin-right:20px;
+}
+.details-side .price-details .actual-price{
+    font-size: 20px;
+    opacity:0.5;
+    text-decoration: line-through;
+    margin-right:10px;
+}
+.details-side .price-details .offer-tag{
+    background-color: #eee;
+    padding:10px;
+    border-radius:5px;
+    color:orangered;
+}
+
+.quantity-container{
+    margin:20px 0px;
+}
+.quantity-container input , .quantity-container button{
+    width:50px;
+    padding:10px;
+    outline:none;
+    border:1px solid #ccc;
+    font-size:20px;
+    font-family: roboto;
+    color:#383838;
+    font-weight:bold;
+    text-align: center;
+    display:none;
+}
+.quantity-container input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.details-side .favourite-btn{
+    margin:10px 0px;
+    display:flex;
+    align-items: center;
+}
+.favourite-btn .favourite-icon{
+    font-size: 23px;
+    color:#ccc;
+    background: transparent;
+    cursor:pointer;
+    align-items: center;
+}
+.favourite-btn .favourite-icon-container{
+    margin-right:10px;
+    padding:7px 9px;
+    border-radius:5px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+.favourite-btn p{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: roboto;
+    color:#383838;
+}
+
+.details-side .buy-btn , .cart-btn{
+    margin:10px 0px;
+    padding:15px 20px;
+    font-size: 20px;
+    font-family: roboto;
+    text-transform: capitalize;
+    border:1px solid grey;
+    color:#383838;
+    background: transparent;
+    cursor:pointer;
+    border-radius:3px;
+    transition:.3s;
+}
+.details-side .buy-btn{
+    margin-right:10px;
+    background-color: orangered;
+    color:white;
+    border:none;
+}
+.details-side .buy-btn:hover{
+    background: transparent;
+    color:orangered;
+}
+.details-side .cart-btn:hover{
+    background-color: black;
+    color:white;
+    /* border:none; */
+}
+
+
+/* details description styles  */
+
+.detail-des-section{
+    padding:5vh 10vw;
+    width:100%;
+}
+.detail-des-section .des-area{
+    height:500px;
+    width:100%;
+    resize: none;
+    padding:10px;
+    margin:20px 0px;
+    border:2px solid #c9c9c9;
+    line-height: 30px;
+    outline:none;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    color:#383838;
+    font-family: roboto;
+    font-size: 18px;
+    overflow-y: auto;
+}
+.detail-des-section .des-area::-webkit-scrollbar{
+    display:block;
+}
+
+
+
+/* styles for best selling products  */
+.best-selling-products{
+    margin-top:40px;
+    padding:0 10vw;
+}
+.best-selling-products .section-heading{
+    text-align: left;
+}
+.best-selling-products .product-cards{
+    display:flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+
+
+/* styles for review section  */
+.review-section{
+    padding:0vh 5vw;
+    margin:50px 0px;
+    width:100%;
+}
+.review-section .section-heading, .detail-des-section .section-heading{
+    text-align: start;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 900;
+    color:#383838;
+    letter-spacing: 1px;
+}
+.review-section .review-section-scroll-container{
+    display:flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.review-section .review-section-scroll-container::-webkit-scrollbar{
+    display: block;
+}
+
+.review-container{
+    /* border:1px solid red; */
+    margin:30px 0px;
+    display:flex;
+    border:1px solid #ccc;
+    padding:35px;
+}
+.review-card{
+    /* border:1px solid black; */
+    width:350px;
+    height:300px;
+    margin-right:50px;
+}
+.review-card .user-dp{
+    position:relative;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+}
+.review-card .user-dp::after{
+    content:'';
+    position:absolute;
+    top:10px;
+    left:10px;
+    right:10px;
+    bottom:10px;
+    border:4px solid white;
+    border-radius:50%;
+}
+
+.review-card .user-dp img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.review-card .user-dp .rating-number{
+    position:absolute;
+    bottom:0px;
+    right:-10px;
+    border-radius:20px;
+    background-color: #27ae60;
+    color:white;
+    padding:5px 15px;
+    z-index:10;
+}
+.review-card .review-title{
+    width:100%;
+    font-size:18px;
+    font-family: sans-serif;
+    color:#383838;
+    padding:20px 0px;
+    line-height: 25px;
+    text-transform: capitalize;
+}
+.review-card .review-content{
+    width:100%;
+    font-size:17px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color:gray;
+    text-transform: capitalize;
+}
+
+
+/* styles for add review inputs fields  */
+
+.add-review-section{
+    /* border:1px solid red; */
+    padding:0vh 5vw;
+    width:100%;
+}
+.add-review-section .section-heading{
+    padding-bottom:20px;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 900;
+    font-family: roboto;
+    color:#383838;
+    letter-spacing: 1px;
+}
+.review-inputs-container{
+    /* border:1px solid black; */
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.review-headline , .review-textarea{
+    width:100%;
+    height:40px;
+    padding:10px;
+    margin:20px 0px;
+    border:2px solid #c9c9c9;
+    line-height: 30px;
+    outline:none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color:#383838;
+    font-family: roboto;
+    font-size: 16px;
+}
+::placeholder{
+    color:#c9c9c9;
+}
+
+.review-textarea{
+    height:120px;
+    resize: none;
+    padding:0px 10px;
+    text-transform: lowercase;
+}
+
+.review-headline:focus , .review-textarea:focus{
+    border-color:#d5be8b;
+}
+.review-headline:focus::placeholder , .review-textarea:focus::placeholder{
+    color:#d5be8b;
+}
+
+.review-inputs-container h3{
+    font-size: 22px;
+    font-family: roboto;
+}
+
+.review-inputs-container .rating-stars{
+    display:flex;
+    gap:7px;
+    padding:7px 0px 0px 0px;
+}
+.review-inputs-container .rating-stars .review-star{
+    height:20px;
+    width:20px;
+    cursor:pointer;
+}
+
+.review-inputs-container .review-fields-error-msg{
+    color:red;
+    padding:10px 0px;
+    display:none;
+}
+
+.review-inputs-container .add-review-btn{
+    width:150px;
+    margin:20px 0px;
+    padding:10px 15px;
+    border:none;
+    color:white;
+    font-size: 17px;
+    font-family: roboto;
+    text-transform: uppercase;
+    cursor:pointer;
+    border-radius:2px;
+    background-color: #d5be8b;
+    border:1px solid #d5be8b;
+    transition: 0.3s;
+}
+.review-inputs-container .add-review-btn:hover{
+    color:#383838;
+    background: transparent;
+}
+
+.review-inputs-container .signup-error-msg{
+    padding-top:10px;
+}

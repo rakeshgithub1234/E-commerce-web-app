@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zcoms: signup</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+    <img src="images/site loader.gif" class="loader" alt="">
+
+    <section class="signup-container">
+        <div class="signup-contents">
+
+            <img src="images/login-banner-img.jpg" alt="" class="signup-banner-img">
+
+            <div class="signup-inputs" style="display:flex; align-items:center;" >
+                <h2 class="welcome-zcoms">welcome back, <span>login here</span></h2>
+    
+                <input type="email" placeholder="enter email" id="email" autocomplete="off" style="width: 100%;">
+                <input type="password" placeholder="password" id="password" autocomplete="off" style="width: 100%;">
+
+                <span class="signup-error-msg" style="margin-left:-65px;">error msg</span>
+    
+    
+                <button class="signup-btn">login</button>
+                <a href="" class="forgot-pwd">forgot password</a>
+                <p class="login-redirect-link">don't have an account? <a href="signup.html">create one</a></p>
+            </div>
+    
+        </div>
+        
+    </section>
+
+
+    <script src="js/common.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+</html>

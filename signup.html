@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zcoms: signup</title>
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+    <img src="images/site loader.gif" class="loader" alt="">
+
+    <section class="signup-container">
+
+        <div class="signup-contents">
+            <div class="signup-inputs">
+                <h2 class="welcome-zcoms">welcome to <span>zcoms</span></h2>
+    
+                <input type="text" placeholder="full name" id="name" autocomplete="off">
+                <input type="email" placeholder="enter email" id="email" autocomplete="off">
+                <input type="password" placeholder="password" id="password" autocomplete="off">
+                <input type="=number" placeholder="phone number" id="phone-number" autocomplete="off">
+    
+                <span class="signup-error-msg">error msg</span>
+    
+                <div class="terms-cond-container">
+                    <input type="checkbox" id="tc"><label for="tc" class="terms-condi">agree to our <a href="">terms and conditions</a></label>
+                </div>
+    
+                <button class="signup-btn">signup</button>
+    
+                <p class="login-redirect-link">if already have an account <a href="login.html">login here</a></p>
+            </div>
+    
+            <img src="images/signup-banner.png" alt="" class="signup-banner-img">
+        </div>
+        
+    </section>
+
+
+    <script src="js/common.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+}
+
+.loader{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100px;
+    z-index:5;
+    display:none;
+}
+
+
+.signup-container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-contents{
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:80vh;
+}
+.signup-inputs{
+    height:80vh;
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:50px;
+    background-color: #fff;
+}
+
+.signup-inputs .welcome-zcoms{
+    font-size:30px;
+    text-align: center;
+    font-family: roboto;
+    padding:10px 0px;
+    margin-bottom:20px;
+    letter-spacing: 1px;
+    color:#383838;
+    text-transform: capitalize;
+}
+.signup-inputs .welcome-zcoms span{
+    color:#27ae60;
+}
+
+.signup-inputs input{
+    margin:15px 0px;
+    width:300px;
+    height:40px;
+    padding:10px;
+    font-family:roboto;
+    font-size: 17px;
+    border:1px solid #696969;
+    color:#383838;
+    outline:none;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.signup-inputs input:focus{
+    border-color: #d5be8b;
+}
+
+.signup-inputs input::placeholder{
+    color:#c9c9c9;
+}
+.signup-inputs input:focus::placeholder{
+    color:#d5be8b;
+}
+
+.signup-error-msg{
+    width:300px;
+    height:30px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: roboto;
+    user-select: none;
+    color:red;
+    opacity:0;
+}
+.signup-error-msg.show{
+    opacity:1;
+}
+
+
+.terms-cond-container{
+    display:flex;
+    align-items: center;
+}
+#tc{
+    -webkit-appearance: none;
+    width:15px;
+    height:15px;
+    margin-right:5px;
+    padding:0;
+    cursor:pointer;
+    position:relative;
+}
+#tc:checked{
+    background: #d5be8b;
+
+}
+#tc::before{
+    content:" ";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: url(../images/check-icon-removebg-preview.png);
+    background-size:13px;
+    display:none;
+}
+#tc:checked::before{
+    display:block;
+}
+
+
+.terms-cond-container .terms-condi , a , .login-redirect-link{
+    color:#383838;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.signup-inputs .signup-btn{
+    width:100px;
+    margin:10px 0px;
+    cursor:pointer;
+    border:1px solid #d5be8b;
+    background-color: #d5be8b;
+    padding:15px 15px;
+    color:white;
+    font-size: 20px;
+    font-family: roboto;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    border-radius: 2px;
+    transition: 0.2s;
+}
+.signup-inputs .signup-btn:hover{
+    background: transparent;
+    color:#383838;
+}
+
+.login-redirect-link{
+    margin:10px 0px;
+}
+
+.signup-contents .signup-banner-img{
+    height:100%;
+}
+
+.signup-inputs .forgot-pwd{
+    text-decoration: none;
+}
+

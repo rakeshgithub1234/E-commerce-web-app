@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zcoms: checkout</title>
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/add-product.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+
+    <header class="header-container"></header>
+
+    <div class="add-product-error signup-error-msg">
+        <p>...some error occured</p>
+    </div>
+
+
+    <div class="checkout-form">
+        <h1 class="section-heading">checkout</h1>
+        <p class="delivery-address-text">delivery address</p>
+
+        <input type="text" id="address" placeholder="address">
+        <input type="text" id="street" placeholder="street">
+        <div class="three-input-container">
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="state" placeholder="state">
+            <input type="text" id="pincode" placeholder="pincode">
+        </div>
+        <input type="text" id="landmark" placeholder="landmark">
+
+    </div>
+
+
+
+
+    <section class="cart-container">
+
+        <h2 class="section-heading">cart</h2>
+        <div class="cart-box">
+            <div class="cart-product-side">
+
+            </div>
+
+            <div class="checkout-side">
+
+                <h2 class="section-heading">total bill</h2>
+
+                <div class="total-amt-container">
+                    <h3 class="amt-heading">grand total :<span class="total-amount">&#8377; 00</span></h3>
+                </div> 
+
+                <button class="place-order-btn">place order</button>
+            </div>
+
+        </div>
+    </section>
+    
+
+
+
+
+    <script src="js/navbar.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

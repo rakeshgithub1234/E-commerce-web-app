@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding:0;
+}
+
+
+.checkout-form{
+    padding:5vh 10vw;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+.checkout-form .section-heading{
+    padding-bottom:30px;
+    text-transform: capitalize;
+    color:#383838;
+    font-size: 35px;
+}
+.checkout-form .delivery-address-text{
+    padding-bottom:10px;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-family: poppins;
+}
+.checkout-form input{
+    width:100%;
+    margin-bottom:20px;
+    height: 40px;
+    outline:none;
+    border:1px solid #ccc;
+    padding:10px;
+    font-size: 18px;
+    border-radius:5px;
+}
+.checkout-form .three-input-container{
+    display:flex;
+    gap:20px;
+}
+.checkout-form input:focus{
+    border-color:#d5be8b;
+}
+.checkout-form input:focus::placeholder{
+    color:#d5be8b;
+}
+
+.cart-container{
+    padding-top:0;
+}
+
+.signup-error-msg{
+    z-index: 1;
+}
